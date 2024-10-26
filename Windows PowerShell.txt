@@ -1,0 +1,227 @@
+PS C:\Users\PDITA448\aventura_no_labirinto> echo. > aventura_pkg\__init__.py
+echo. : O termo 'echo.' não é reconhecido como nome de cmdlet, função, arquivo de script ou programa operável.
+Verifique a grafia do nome ou, se um caminho tiver sido incluído, veja se o caminho está correto e tente novamente.
+No linha:1 caractere:1
++ echo. > aventura_pkg\__init__.py
++ ~~~~~
+    + CategoryInfo          : ObjectNotFound: (echo.:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\PDITA448\aventura_no_labirinto> echo. > aventura_pkg\labirinto.py
+echo. : O termo 'echo.' não é reconhecido como nome de cmdlet, função, arquivo de script ou programa operável.
+Verifique a grafia do nome ou, se um caminho tiver sido incluído, veja se o caminho está correto e tente novamente.
+No linha:1 caractere:1
++ echo. > aventura_pkg\labirinto.py
++ ~~~~~
+    + CategoryInfo          : ObjectNotFound: (echo.:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\PDITA448\aventura_no_labirinto> echo. > aventura_pkg\jogador.py
+echo. : O termo 'echo.' não é reconhecido como nome de cmdlet, função, arquivo de script ou programa operável.
+Verifique a grafia do nome ou, se um caminho tiver sido incluído, veja se o caminho está correto e tente novamente.
+No linha:1 caractere:1
++ echo. > aventura_pkg\jogador.py
++ ~~~~~
+    + CategoryInfo          : ObjectNotFound: (echo.:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\PDITA448\aventura_no_labirinto> echo. > aventura_pkg\utils.py
+echo. : O termo 'echo.' não é reconhecido como nome de cmdlet, função, arquivo de script ou programa operável.
+Verifique a grafia do nome ou, se um caminho tiver sido incluído, veja se o caminho está correto e tente novamente.
+No linha:1 caractere:1
++ echo. > aventura_pkg\utils.py
++ ~~~~~
+    + CategoryInfo          : ObjectNotFound: (echo.:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\PDITA448\aventura_no_labirinto> echo. > main.py
+echo. : O termo 'echo.' não é reconhecido como nome de cmdlet, função, arquivo de script ou programa operável.
+Verifique a grafia do nome ou, se um caminho tiver sido incluído, veja se o caminho está correto e tente novamente.
+No linha:1 caractere:1
++ echo. > main.py
++ ~~~~~
+    + CategoryInfo          : ObjectNotFound: (echo.:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\PDITA448\aventura_no_labirinto> echo. > README.md
+echo. : O termo 'echo.' não é reconhecido como nome de cmdlet, função, arquivo de script ou programa operável.
+Verifique a grafia do nome ou, se um caminho tiver sido incluído, veja se o caminho está correto e tente novamente.
+No linha:1 caractere:1
++ echo. > README.md
++ ~~~~~
+    + CategoryInfo          : ObjectNotFound: (echo.:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\PDITA448\aventura_no_labirinto>
+PS C:\Users\PDITA448\aventura_no_labirinto> New-Item -Path aventura_pkg\__init__.py -ItemType File
+
+
+    Diretório: C:\Users\PDITA448\aventura_no_labirinto\aventura_pkg
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        26/10/2024     14:28              0 __init__.py
+
+
+PS C:\Users\PDITA448\aventura_no_labirinto> New-Item -Path aventura_pkg\labirinto.py -ItemType File
+
+
+    Diretório: C:\Users\PDITA448\aventura_no_labirinto\aventura_pkg
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        26/10/2024     14:28              0 labirinto.py
+
+
+PS C:\Users\PDITA448\aventura_no_labirinto> New-Item -Path aventura_pkg\jogador.py -ItemType File
+
+
+    Diretório: C:\Users\PDITA448\aventura_no_labirinto\aventura_pkg
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        26/10/2024     14:28              0 jogador.py
+
+
+PS C:\Users\PDITA448\aventura_no_labirinto> New-Item -Path aventura_pkg\utils.py -ItemType File
+
+
+    Diretório: C:\Users\PDITA448\aventura_no_labirinto\aventura_pkg
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        26/10/2024     14:28              0 utils.py
+
+
+PS C:\Users\PDITA448\aventura_no_labirinto> New-Item -Path main.py -ItemType File
+
+
+    Diretório: C:\Users\PDITA448\aventura_no_labirinto
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        26/10/2024     14:28              0 main.py
+
+
+PS C:\Users\PDITA448\aventura_no_labirinto> New-Item -Path README.md -ItemType File
+
+
+    Diretório: C:\Users\PDITA448\aventura_no_labirinto
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        26/10/2024     14:28              0 README.md
+
+
+PS C:\Users\PDITA448\aventura_no_labirinto> python -m venv venv
+PS C:\Users\PDITA448\aventura_no_labirinto> .\venv\Scripts\Activate
+(venv) PS C:\Users\PDITA448\aventura_no_labirinto> pip install rich pynput
+Collecting rich
+  Downloading rich-13.9.3-py3-none-any.whl.metadata (18 kB)
+Collecting pynput
+  Downloading pynput-1.7.7-py2.py3-none-any.whl.metadata (31 kB)
+Collecting markdown-it-py>=2.2.0 (from rich)
+  Using cached markdown_it_py-3.0.0-py3-none-any.whl.metadata (6.9 kB)
+Collecting pygments<3.0.0,>=2.13.0 (from rich)
+  Using cached pygments-2.18.0-py3-none-any.whl.metadata (2.5 kB)
+Collecting six (from pynput)
+  Using cached six-1.16.0-py2.py3-none-any.whl.metadata (1.8 kB)
+Collecting mdurl~=0.1 (from markdown-it-py>=2.2.0->rich)
+  Using cached mdurl-0.1.2-py3-none-any.whl.metadata (1.6 kB)
+Downloading rich-13.9.3-py3-none-any.whl (242 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 242.2/242.2 kB 2.5 MB/s eta 0:00:00
+Downloading pynput-1.7.7-py2.py3-none-any.whl (90 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 90.2/90.2 kB 5.0 MB/s eta 0:00:00
+Using cached markdown_it_py-3.0.0-py3-none-any.whl (87 kB)
+Using cached pygments-2.18.0-py3-none-any.whl (1.2 MB)
+Using cached six-1.16.0-py2.py3-none-any.whl (11 kB)
+Using cached mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+Installing collected packages: six, pygments, mdurl, pynput, markdown-it-py, rich
+Successfully installed markdown-it-py-3.0.0 mdurl-0.1.2 pygments-2.18.0 pynput-1.7.7 rich-13.9.3 six-1.16.0
+
+[notice] A new release of pip is available: 24.0 -> 24.2
+[notice] To update, run: python.exe -m pip install --upgrade pip
+(venv) PS C:\Users\PDITA448\aventura_no_labirinto> pip freeze > requirements.txt
+(venv) PS C:\Users\PDITA448\aventura_no_labirinto> pydoc -w aventura_pkg
+pydoc : O termo 'pydoc' não é reconhecido como nome de cmdlet, função, arquivo de script ou programa operável.
+Verifique a grafia do nome ou, se um caminho tiver sido incluído, veja se o caminho está correto e tente novamente.
+No linha:1 caractere:1
++ pydoc -w aventura_pkg
++ ~~~~~
+    + CategoryInfo          : ObjectNotFound: (pydoc:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+(venv) PS C:\Users\PDITA448\aventura_no_labirinto> pip install pdoc3
+Collecting pdoc3
+  Downloading pdoc3-0.11.1.tar.gz (97 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 97.9/97.9 kB 1.1 MB/s eta 0:00:00
+  Installing build dependencies ... done
+  Getting requirements to build wheel ... done
+  Installing backend dependencies ... done
+  Preparing metadata (pyproject.toml) ... done
+Collecting mako (from pdoc3)
+  Downloading Mako-1.3.6-py3-none-any.whl.metadata (2.9 kB)
+Collecting markdown>=3.0 (from pdoc3)
+  Downloading Markdown-3.7-py3-none-any.whl.metadata (7.0 kB)
+Collecting MarkupSafe>=0.9.2 (from mako->pdoc3)
+  Downloading MarkupSafe-3.0.2-cp312-cp312-win_amd64.whl.metadata (4.1 kB)
+Downloading Markdown-3.7-py3-none-any.whl (106 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 106.3/106.3 kB 3.1 MB/s eta 0:00:00
+Downloading Mako-1.3.6-py3-none-any.whl (78 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 78.6/78.6 kB 4.3 MB/s eta 0:00:00
+Downloading MarkupSafe-3.0.2-cp312-cp312-win_amd64.whl (15 kB)
+Building wheels for collected packages: pdoc3
+  Building wheel for pdoc3 (pyproject.toml) ... done
+  Created wheel for pdoc3: filename=pdoc3-0.11.1-py3-none-any.whl size=125466 sha256=476af9bc429379366cffcb275f97ca03d4d3e3304a72c8ebc739159e00931796
+  Stored in directory: c:\users\pdita448\appdata\local\pip\cache\wheels\ba\2e\e4\03f302cf828003216e3131d5cc5e46dce5c2fee0c8e534f11c
+Successfully built pdoc3
+Installing collected packages: MarkupSafe, markdown, mako, pdoc3
+Successfully installed MarkupSafe-3.0.2 mako-1.3.6 markdown-3.7 pdoc3-0.11.1
+
+[notice] A new release of pip is available: 24.0 -> 24.2
+[notice] To update, run: python.exe -m pip install --upgrade pip
+(venv) PS C:\Users\PDITA448\aventura_no_labirinto> pdoc --html --output-dir ./docs ./aventura_pkg
+C:\Users\PDITA448\aventura_no_labirinto\venv\Lib\site-packages\pdoc\cli.py:555: UserWarning: Couldn't read PEP-224 variable docstrings from <Module 'aventura_pkg'>: could not get source code
+  modules = [pdoc.Module(module, docfilter=docfilter,
+C:\Users\PDITA448\aventura_no_labirinto\venv\Lib\site-packages\pdoc\__init__.py:769: UserWarning: Couldn't read PEP-224variable docstrings from <Module 'aventura_pkg.jogador'>: could not get source code
+  m = Module(import_module(fullname),
+C:\Users\PDITA448\aventura_no_labirinto\venv\Lib\site-packages\pdoc\__init__.py:769: UserWarning: Couldn't read PEP-224variable docstrings from <Module 'aventura_pkg.labirinto'>: could not get source code
+  m = Module(import_module(fullname),
+C:\Users\PDITA448\aventura_no_labirinto\venv\Lib\site-packages\pdoc\__init__.py:769: UserWarning: Couldn't read PEP-224variable docstrings from <Module 'aventura_pkg.main'>: could not get source code
+  m = Module(import_module(fullname),
+C:\Users\PDITA448\aventura_no_labirinto\venv\Lib\site-packages\pdoc\__init__.py:769: UserWarning: Couldn't read PEP-224variable docstrings from <Module 'aventura_pkg.utils'>: could not get source code
+  m = Module(import_module(fullname),
+./docs\aventura_pkg\index.html
+./docs\aventura_pkg\jogador.html
+./docs\aventura_pkg\labirinto.html
+./docs\aventura_pkg\main.html
+./docs\aventura_pkg\utils.html
+(venv) PS C:\Users\PDITA448\aventura_no_labirinto> README.MD
+README.MD : O termo 'README.MD' não é reconhecido como nome de cmdlet, função, arquivo de script ou programa operável.
+Verifique a grafia do nome ou, se um caminho tiver sido incluído, veja se o caminho está correto e tente novamente.
+No linha:1 caractere:1
++ README.MD
++ ~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (README.MD:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+
+Suggestion [3,General]: O comando README.MD não foi encontrado, mas existe no local atual. Por padrão, o Windows PowerShell não carrega comandos do local atual. Se você confia nesse comando, digite: ".\README.MD". Consulte "get-help about_Command_Precedence" para obter mais detalhes.
+(venv) PS C:\Users\PDITA448\aventura_no_labirinto> pip install -r requirements.txt
+Requirement already satisfied: markdown-it-py==3.0.0 in c:\users\pdita448\aventura_no_labirinto\venv\lib\site-packages (from -r requirements.txt (line 1)) (3.0.0)
+Requirement already satisfied: mdurl==0.1.2 in c:\users\pdita448\aventura_no_labirinto\venv\lib\site-packages (from -r requirements.txt (line 2)) (0.1.2)
+Requirement already satisfied: Pygments==2.18.0 in c:\users\pdita448\aventura_no_labirinto\venv\lib\site-packages (from-r requirements.txt (line 3)) (2.18.0)
+Requirement already satisfied: pynput==1.7.7 in c:\users\pdita448\aventura_no_labirinto\venv\lib\site-packages (from -rrequirements.txt (line 4)) (1.7.7)
+Requirement already satisfied: rich==13.9.3 in c:\users\pdita448\aventura_no_labirinto\venv\lib\site-packages (from -r requirements.txt (line 5)) (13.9.3)
+Requirement already satisfied: six==1.16.0 in c:\users\pdita448\aventura_no_labirinto\venv\lib\site-packages (from -r requirements.txt (line 6)) (1.16.0)
+
+[notice] A new release of pip is available: 24.0 -> 24.2
+[notice] To update, run: python.exe -m pip install --upgrade pip
+(venv) PS C:\Users\PDITA448\aventura_no_labirinto> python main.py
+(venv) PS C:\Users\PDITA448\aventura_no_labirinto>
